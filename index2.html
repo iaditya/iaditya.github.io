@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Aditya Pansari | Resume</title>
+
+	<script src="https://use.fontawesome.com/ba6abee53e.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans" rel="stylesheet">
+
+	<style>
+		/*
+	colot palette
+	#2b2d43 = dark blue
+	#8d99ae = light blue
+	#edf2f4 - blue white
+	#ee233c = red
+	*/
+
+		html {
+			box-sizing: border-box;
+		}
+
+		*,
+		*:before,
+		*:after {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Open Sans', sans-serif;
+			margin: 0;
+		}
+
+		.btn {
+			text-decoration: none;
+			background: red;
+			color: white;
+			padding: 10px;
+			display: inline-block;
+		}
+
+		.download {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+
+		nav {
+			text-align: center;
+			background: white;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+
+		nav a {
+			display: inline-block;
+			padding: 15px 20px;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+
+		h1,
+		h2 {
+			font-family: 'Caveat', cursive;
+			font-weight: 700;
+		}
+
+		h1 {
+			font-size: 80px;
+		}
+
+		h2 {
+			font-size: 40px;
+			margin-top: 0;
+		}
+
+		h3 {
+			margin: 0;
+		}
+
+		.uppercase {
+			text-transform: uppercase;
+		}
+
+		.job-description {
+			margin-bottom: 25px;
+		}
+
+		.job-description p:first-of-type {
+			margin-top: 0;
+		}
+
+		a {
+			color: #ee233c;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+
+		.content-wrap {
+			max-width: 950px;
+			margin: 0 auto;
+			padding: 60px 50px;
+			overflow: auto;
+		}
+
+
+
+		.profile-img {
+			border-radius: 50%;
+
+		}
+
+		.col-wide {
+			width: 70%;
+			float: left;
+			padding-left: 20px;
+		}
+
+		.col-narrow {
+			width: 30%;
+			float: left;
+		}
+
+
+		header,
+		footer {
+			background-color: #2b2d43;
+			color: #8d99ae;
+		}
+
+		header {
+			padding-top: 50px;
+			position: relative;
+		}
+
+		header h1,
+		header h2 {
+			color: #edf2f4;
+			margin: 0;
+		}
+
+		footer {
+			text-align: center;
+		}
+
+		.contact-info a {
+			padding: 10px;
+		}
+
+
+		.work {
+			background-color: #edf2f4;
+		}
+
+		h3~p {
+			margin: 0;
+		}
+
+
+		.education {
+			background-color: #8d99ae;
+		}
+
+		p+h3 {
+			margin-top: 25px;
+		}
+	</style>
+
+
+
+
+
+</head>
+
+<body>
+
+	<header id="about">
+
+		<nav>
+			<a href="#about">About</a>
+			<a href="#work">Work Experience</a>
+			<a href="#education">Education</a>
+			<a href="#contact">Contact</a>
+		</nav>
+
+		<div class="content-wrap">
+			<img class="profile-img col-narrow" src="assets/images/profile.png" height="300px;" alt="Aditya">
+			<div class="col-wide">
+				<h1>Aditya Gupta</h1>
+				<h2>Web Developer + Educator</h2>
+				<p>This application includes Attendance Monitoring Systems, Leave management Systems, Payroll Generator and Employee Interaction.
+					It is an online system that is similar to in-housing software that specifically runs on a server.
+				</p>
+			</div>
+			<a class="btn download" href="#" target="_blank">Download Pdf</a>
+		</div>
+	</header>
+
+	<main>
+
+		<!-- Work exprience  -->
+		<section id="work" class="work">
+
+			<div class="content-wrap">
+
+				<h2>Work Exprience</h2>
+
+				<div class="col-narrow">
+					<h3>Front Developer + Educator</h3>
+					<p class="uppercase">Independent </p>
+					<p>Jan 2020 - 2020</p>
+				</div>
+
+				<div class="col-wide job-description">
+					<p>This application includes Attendance Monitoring Systems, Leave management Systems, Payroll Generator and Employee Interaction.
+						It is an online system that is similar to in-housing software that specifically runs on a server.</p>
+					<p>see more at
+						<a href="#" target="_blank">ABC.com</a>
+					</p>
+				</div>
+
+				<div class="col-narrow">
+					<h3>Front Developer + Educator</h2>
+						<p class="uppercase">Independent </p>
+						<p>Jan 2020 - 2020</p>
+				</div>
+
+				<div class="col-wide job-description">
+					<p>This application includes Attendance Monitoring Systems, Leave management Systems, Payroll Generator and Employee Interaction.
+						It is an online system that is similar to in-housing software that specifically runs on a server.</p>
+					<p>see more at
+						<a href="#" target="_blank">ABC.com</a>
+					</p>
+				</div>
+
+			</div>
+
+
+		</section>
+
+		<!-- Education  -->
+		<section id="education" class="education">
+
+			<div class="content-wrap">
+
+				<h2>Education</h2>
+
+				<h3>KIET</h3>
+				<p>B. tech Computer Science</p>
+				<p>Jan 2020 - 2020</p>
+
+
+				<h3>KIET</h3>
+				<p>B. tech Computer Science</p>
+				<p>Jan 2020 - 2020</p>
+
+			</div>
+
+
+		</section>
+
+	</main>
+
+	<footer id="contact">
+		<div class="content-wrap">
+			<h2>Let's Keep in Touch</h2>
+			<div class="contact-info">
+				<a href="#">Facebook</a>
+				<a href="#">Facebook</a>
+				<a href="https://twitter.com/iadityaPansari">
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+					<span class="sr-only">Twitter</span>
+				</a>
+				<a href="#">Facebook</a>
+				<a href="#">Facebook</a>
+			</div>
+
+			<p>Copyright 2017</p>
+
+		</div>
+	</footer>
+
+</body>
+
+</html>
