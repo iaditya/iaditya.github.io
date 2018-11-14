@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-<!--[if IE 8]>
-<html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]>
-<html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en"> <!--<![endif]-->
+<html lang="en">
+
 <head>
     <title>adityaPansari</title>
     <!-- Meta -->
@@ -14,278 +10,35 @@
     <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
     <link rel="shortcut icon" href="favicon.ico">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
-          rel='stylesheet' type='text/css'>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
 
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles-6.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/custom.css">
 </head>
 
-<body>
-
-<!--
-<div class="wrapper">
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Aditya Gupta | Full Stack Developer</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Resume</a></li>
-                <li><a href="#">My Cooking</a></li>
-                <li><a href="#">My Photos</a></li>
-            </ul>
+<body style="margin:0; padding: 0; background-image:url('img/profile.jpg');  background-size: cover;">
+    <div style="position:absolute; top: 70px; left: 50px;">
+        <div style="text-align:left;">
+            <h4><span class="fas fa-user-astronaut"></span> &nbsp;Aditya Gupta</h4>
+            <p>Exploring Space ... </p>
         </div>
-    </nav>
-</div>
--->
+    </div>
 
-<div id class="wrapper">
-    <div class="sidebar-wrapper">
-        <div class="profile-container">
-            <img class="profile" src="assets/images/profile.png" height="100px" width="100px" alt=""/>
-            <h1 class="name">Aditya Gupta</h1>
-            <h3 class="tagline">Full Stack Developer</h3>
-        </div><!--//profile-container-->
 
-        <div class="contact-container container-block">
-            <ul class="list-unstyled contact-list">
-                <li class="email"><i class="fa fa-envelope"></i><a href="mailto: iadityapansari@gmail.com">iadityapansari</a>
-                </li>
-                <li class="github"><i class="fa fa-github"></i><a href="https://github.com/iaditya" target="_blank">github.com/iaditya</a>
-                </li>
-                <li class="website"><i class="fa fa-globe"></i><a
-                        href="http://themes.3rdwavemedia.com/website-templates/free-responsive-website-template-for-developers/"
-                        target="_blank">iaditya.github.io/</a></li>
-                <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/iadityagupta"
-                                                                      target="_blank">/iadityagupta</a></li>
-                <!--
-                <li class="phone"><i class="fa fa-phone"></i><a href="tel:9030061992">903 006 1992</a></li>
-                -->
-                <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/iadityaPansari"
-                                                                    target="_blank">@iadityaPansari</a></li>
-                <li class="unmarried"><i class="fa fa-male"></i> Single</li>
-                <li class="dob"><i class="fa fa-birthday-cake"></i>19-06-1992</li>
-            </ul>
-        </div><!--//contact-container-->
-        <div class="education-container container-block">
-            <h2 class="container-block-title">Education</h2>
-            <div class="item">
-                <h4 class="degree">Bachelor in Computer Science</h4>
-                <h5 class="meta">Dr. Abdul Kalam Tech. University</h5>
-                <div class="time">2012 - 2016</div>
-            </div><!--//item-->
-            <div class="item">
-                <h4 class="degree">Diploma in Information Technology</h4>
-                <h5 class="meta">Hewett Polytechnic</h5>
-                <div class="time">2009 - 2012</div>
-            </div><!--//item-->
-        </div><!--//education-container-->
 
-        <div class="languages-container container-block">
-            <h2 class="container-block-title">Languages</h2>
-            <ul class="list-unstyled interests-list">
-                <li>Hindi <span class="lang-desc">(Native)</span></li>
-                <li>English <span class="lang-desc">(Professional)</span></li>
-            </ul>
-        </div><!--//interests-->
-
-        <div class="interests-container container-block">
-            <h2 class="container-block-title">Interests</h2>
-            <ul class="list-unstyled interests-list">
-                <li>Cooking</li>
-                <li>Gaming</li>
-                <li>Cineams</li>
-
-            </ul>
-        </div><!--//interests-->
-
-    </div><!--//sidebar-wrapper-->
-
-    <div class="main-wrapper">
-
-        <section class="section summary-section">
-            <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
-            <div class="summary">
-                <p>A position as a Full Stack Developer in a company with a creative working and learning environment.
-                </p>
-            </div><!--//summary-->
-        </section><!--//section-->
-
-        <section class="section experiences-section">
-            <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
-            <div class="item">
-                <div class="meta">
-                    <div class="upper-row">
-                        <h3 class="job-title">Full Stack Developer</h3>
-                        <div class="time">2016 - Present</div>
-                    </div><!--//upper-row-->
-                    <div class="company">Incuhub: TalkaDoc, Hyderabad</div>
-                </div><!--//meta-->
-                <div class="details">
-                    <ul>
-                        <li><b>Project: </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TalkaDoc</li>
-                        <li><b>APIs: </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ZoomApi,
-                            Textlocal, Google Url Shortener
-                        </li>
-                        <li><b>Stack: </b>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;MAMP, CakePHP 3, Bootstrap,
-                            FullCalendar, Select2, jQuery, Bitbucket
-                        </li>
-                        <li><b>Paradigms: </b>MVC, OOPs</li>
-                    </ul>
-
-                </div><!--//details-->
-            </div><!--//item-->
-
-            <div class="item">
-                <div class="meta">
-                    <div class="upper-row">
-                        <h3 class="job-title">Web Developer</h3>
-                        <div class="time">2014 - 2015</div>
-                    </div><!--//upper-row-->
-                    <div class="company">TEAM-ERP, KIET, Ghaziabad</div>
-                </div><!--//meta-->
-                <div class="details">
-                    <ul>
-                        <li><b>Project: </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ERP System [HR - Portal]</li>
-                        <li><b>Stack: </b>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;MAMP, Bootstrap, HTML,
-                            javaScript
-                        </li>
-                        <li><b>Paradigms: </b>Procedural Programming</li>
-                    </ul>
-
-                </div><!--//details-->
-            </div><!--//item-->
-
-        </section><!--//section-->
-
-        <section class="section projects-section">
-            <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
-            <!--
-            <div class="intro">
-                <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
-            </div><!--//intro-->
-            <div class="item">
-                <span class="project-title"><a href="http://www.talkadoc.com/">TalkaDoc</a></span> - <span
-                    class="project-tagline">A Healthcare Project provides interaction between Doctors, Patients, and Facilities. The term TalkaDoc stands for ‘Talk to A Doctor’, which suggests that, connecting with your Doctor is Easy, Convenient and Meaningful. The project is implementing using CakePHP, MySQL, Bootstrap and ZoomApi for teleconferencing.</span>
-
-            </div><!--//item-->
-            <div class="item">
-                <span class="project-title"><a href="https://github.com/iaditya/Weather-Application" target="_blank">Weather Application</a></span>
-                -
-                <span class="project-tagline">This application is using ‘open weather map’ API and implemented by using AngularJS and Bootstrap.</span>
-            </div><!--//item-->
-            <div class="item">
-                <span class="project-title"><a href="http://www.kiet.edu/ERP.php">ERP System [HR - Portal]</a></span> -
-                <span class="project-tagline">This application includes Attendance Monitoring Systems, Leave management Systems, Payroll Generator and Employee Interaction. It is an online system that is similar to in-housing software that specifically runs on a server. It standardized a common universal process for the entire organization. Different user levels like Dean, HODs, etc. although have different dashboards but they follow a common procedure for using their features. It is a live project at KIET Group of institutions.</span>
-            </div><!--//item-->
-        </section><!--//section-->
-
-        <section class="skills-section section">
-            <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
-            <div class="skillset">
-                <div class="item">
-                    <h3 class="level-title">Javascript, SQL &amp; C++</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="65%">
-                        </div>
-                    </div><!--//level-bar-->
-                </div><!--//item-->
-
-                <div class="item">
-                    <h3 class="level-title">PHP &amp; CakePHP3</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="60%">
-                        </div>
-                    </div><!--//level-bar-->
-                </div><!--//item-->
-
-                <div class="item">
-                    <h3 class="level-title"> jQuery &amp; Select2</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="60%">
-                        </div>
-                    </div><!--//level-bar-->
-                </div><!--//item-->
-
-                <div class="item">
-                    <h3 class="level-title">Angular</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="50%">
-                        </div>
-                    </div><!--//level-bar-->
-                </div><!--//item-->
-
-                <div class="item">
-                    <h3 class="level-title">HTML5 &amp; CSS</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="70%">
-                        </div>
-                    </div><!--//level-bar-->
-                </div><!--//item-->
-
-                <div class="item">
-                    <h3 class="level-title">Bootstrap, FullCalendar</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="60%">
-                        </div>
-                    </div><!--//level-bar-->
-                </div><!--//item-->
-
-                <div class="item">
-                    <h3 class="level-title">MySQL &amp; Redis</h3>
-                    <div class="level-bar">
-                        <div class="level-bar-inner" data-level="50%">
-                        </div>
-                    </div><!--//level-bar-->
-                </div><!--//item-->
-
-            </div>
-        </section><!--//skills-section-->
-
-        <section class="section projects-section">
-            <h2 class="section-title"><i class="fa fa-archive"></i>Achievements</h2>
-            <!--
-            <div class="intro">
-                <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
-            </div><!--//intro-->
-            <div class="item">
-                <span class="project-title">Ricoh India Excellence Award </span> - <span class="project-tagline">Awarded for project ERP in the category ‘Best IT Project By Students’.</span>
-
-            </div><!--//item-->
-            <div class="item">
-                <span class="project-title">Recognition for Development of ERP :</span> - <span class="project-tagline">by Krishna Institute of Engineering & Technology.</span>
-            </div><!--//item-->
-            <div class="item">
-                <span class="project-title">Recognition for working at social welfare society </span> - <span
-                    class="project-tagline">UDDESHHYA:  Living for a reason.</span>
-            </div><!--//item-->
-        </section><!--//section-->
-
-    </div><!--//main-body-->
-</div>
-
-<footer class="footer">
-    <div class="text-center">
-        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-        <small class="copyright"><i class="fa fa-heart"></i> Aditya Gupta</small>
-    </div><!--//container-->
-</footer><!--//footer-->
-
-<!-- Javascript -->
-<script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-<!-- custom js -->
-<script type="text/javascript" src="assets/js/main.js"></script>
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
-</html> 
 
+</html>
