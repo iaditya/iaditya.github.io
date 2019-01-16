@@ -1,0 +1,18 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:whitesmoke;
+}
+
+li {
+    padding:3px;
+}
+
+p > span > span {
+    padding:1px; 
+    text-shadow: 1px 1px black;
+}
