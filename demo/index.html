@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Electric Vehicle Charger Demo</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="dist/css/normalize.css">
+  <link rel="stylesheet" href="dist/css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="dist/images/favicon.png">
+
+</head>
+
+<style>
+  @font-face {
+    font-family: 'digital';
+    src: url('css/DS-DIGIB.TTF');
+  }
+
+  #auth,
+  #not-auth {
+    display: none;
+  }
+
+  .digital-text {
+    font-family: 'digital', Fallback, sans-serif;
+    color: green;
+    padding: 10px 15px;
+    line-height: 5px;
+  }
+
+  .hero#auth {
+    padding: 11rem 0 22rem 0;
+  }
+
+
+
+  img.phone.car {
+    max-width: 150%;
+    right: -290px;
+  }
+
+  @media (max-width: 1330px) {
+    img.phone.car {
+      max-width: 120%;
+      right: -150px;
+      top: -70px;
+    }
+  }
+
+  @media (max-width: 980px) {
+    img.phone.car {
+      max-width: 120%;
+      right: -100px;
+      top: -30px;
+    }
+  }
+</style>
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="section hero" id="not-auth">
+    <div class="container">
+      <div class="row">
+        <div class="one-half column">
+          <h4 class="hero-heading">Electric Vehicle Charging Portal</h4>
+          <a class="button button-primary" href="http://getskeleton.com">Try Your <u style="color: black;">RFID</u>
+            card</a>
+          <input type="text" id="rfid" autofocus />
+        </div>
+        <div class="one-half column phones">
+          <img class="phone car" src="images/car.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section hero" id="auth">
+    <div style="position:fixed; top: 0; z-index: 33; width:100%; height: 60px; background-color: whitesmoke;">
+      <span style="padding: 5px 30px; line-height: 60px;">Authenticated User</span>
+      <span style="padding: 5px 30px; line-height: 60px;">Last Time Swiped: 5 hours ago</span>
+
+      <span style="padding: 5px 30px; line-height: 60px;">Total Used: 45$</span>
+      <b id="logout" style="padding: 5px 30px; cursor: pointer; line-height: 45px; float: right; color: darkred; border: 3px solid red; ">Click here to
+        Unplug</b>
+    </div>
+    <div class="container">
+      <div class="row">
+
+        <div class="one-half column">
+          <div style="position: relative">
+            <div style="position: absolute;">
+              <div style="position: relative">
+                <img style="height:400px; width:400px;" src="images/device.jpeg">
+
+                <div
+                  style="position: absolute; top: 75px; left: 110px; background-color: black; width: 180px; height: 30px; border: 2px solid gray; box-shadow: inset 0 0 10px gray; border-radius: 10px;">
+                  <p class="digital-text">
+                    <span id="screen-value">Authenticated1</span>
+                    <!-- <span style="float: right">L2:32A</span> -->
+                  </p>
+                </div>
+              </div>
+              <div style="position: absolute; top:140px; left:400px;">
+                <button id="startFilling">Start</button>
+              </div>
+              <div
+                style="position: absolute; top:155px; left:200px; width: 200px; height: 3px; background-color: black;">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="one-half column">
+          <div style="position: relative">
+            <div style="position: absolute; right: -550px;">
+              <img style="height:410px; width:200px;" src="images/connector2.jpeg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section values">
+    <div class="container">
+      <div class="row">
+        <div class="one-third column value">
+          <h2 class="value-multiplier">67%</h2>
+          <h5 class="value-heading">Purchase Increase</h5>
+          <p class="value-description">Percentage of users more likely to purchase on mobile friendly site.</p>
+        </div>
+        <div class="one-third column value">
+          <h2 class="value-multiplier">90%</h2>
+          <h5 class="value-heading">Multi-device Users</h5>
+          <p class="value-description">Most of the world accesses the internet on multiple devices.</p>
+        </div>
+        <div class="one-third column value">
+          <h2 class="value-multiplier">3%</h2>
+          <h5 class="value-heading">Sad Users</h5>
+          <p class="value-description">Percentage of users that are frustrated with page load times.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section get-help">
+    <div class="container">
+      <h3 class="section-heading">Need help getting started?</h3>
+      <!-- <p class="section-description">Skeleton is an amazingly easy place to start with responsive development. If you
+        want to learn more, just visit the documentation!</p> -->
+      <a class="button button-primary" href="http://getskeleton.com">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- <div class="section categories">
+    <div class="container">
+      <h3 class="section-heading">Responsive Images</h3>
+      <p class="section-description">Skeleton images sit easily in grid with .u-max-full-width class. I suggest
+        exploring solution to serving different images based on device size.</p>
+      <div class="row">
+        <div class="one-half column category">
+          <img class="u-max-full-width" src="images/placeholder.png">
+        </div>
+        <div class="one-half column category">
+          <img class="u-max-full-width" src="images/placeholder.png">
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+<script src="./main.js"></script>
+
+</html>
