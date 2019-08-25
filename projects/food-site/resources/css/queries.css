@@ -1,0 +1,157 @@
+
+/* big tabs to 1200px */
+@media only screen and (max-width: 1200px) {
+    
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row { padding: 0 2%; }
+}
+
+/* small tabs to big tabs: from  768px-1023px */
+@media only screen and (max-width: 1023px) {
+    
+    body {
+        font-size: 18px;
+    }
+
+    section { padding: 60px 0;}
+
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .steps-box { margin-top: 10px;}
+
+    .steps-box:last-child {
+        margin-top: 20px; 
+    }
+
+    .work-steps {
+        margin-bottom: 40px;
+    }
+    
+    .work-steps:last-of-type {
+        margin-bottom: 60px;
+    }
+
+    .app-screen {
+        width: 50%;
+    }
+    
+    .icon-small { width: 17px; margin-right: 5px;}
+
+    .city-feature { font-size: 86%; }
+
+    .plan-box { width: 100%; margin-left: 0%;}
+
+    .plan-price { font-size: 250%; }
+
+    .contact-form { width: 80%; }
+}
+
+/* small phones and small tabs: from  481-767px */
+@media only screen and (max-width: 767px) {
+    
+    body {font-size: 16px; }
+
+    section { padding: 30px 0;}
+
+    h1 { font-size: 180%; word-spacing: 4px; }
+    h2 { font-size: 150%; word-spacing: 1px; margin-bottom: 20px; }
+    h2:after {margin-top: 20px; width: 100px;}
+
+    .row,
+    .hero-text-box {
+        padding: 0 4%;
+    }
+    .col { width: 100%; margin: 0 0 4% 0; }
+
+    .main-nav {display: none}
+
+    .mobile-nav-icon { display: inline-block;}
+    .main-nav { 
+        float: left; margin-top: 35px 0 0 25px;
+    }
+
+    .main-nav li {
+        display: block;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+
+    .sticky .main-nav {
+        margin-top: 10px;
+    }
+    .sticky .mobile-nav-icon {margin-top: 10px;}
+    .sticky .mobile-nav-icon .ion-navicon-round {
+        font-size: 200%;
+        color: #555;
+    }
+    
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 10px 0; }
+
+    .long-copy { width: 100%; margin-left: 0%; }
+
+    .steps-box:first-child {
+        text-align: center;
+        padding-right: 0%;
+    }
+
+    .app-screen {
+        width: 40%;
+    }
+
+    .work-steps {
+        margin-bottom: 20px;
+    }
+    
+    .work-steps:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .work-steps > div {
+        height: 40px;
+        width: 40px;
+        padding: 4px;
+        font-size: 120%;
+        margin: 0 15px 0 0; 
+    }
+}
+
+/* this is for small phones: from 0-480px */
+@media only screen and (max-width: 480px) {
+
+    body {font-size: 14px; }
+
+    section {
+        padding: 25px 0;
+    }
+
+    .contact-form { width: 100%; }
+
+    .btn-app img {
+        height: 40px;
+        width: auto;
+        margin-left: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
