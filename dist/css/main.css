@@ -7,17 +7,44 @@
   margin: 0;
 }
 
+.home {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../../img/profile.jpg") center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../../img/profile.jpg") center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home__name {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  border-bottom: 1px solid #fff;
+}
+
+.home__name--last {
+  color: #ff652f;
+  font-weight: 700;
+}
+
 body {
   background-color: #272727;
   color: #fff;
   height: 100vh;
   line-height: 1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 a {
@@ -45,6 +72,8 @@ main .social-icons {
 
 main .social-icons a {
   padding: 0.4rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 main .social-icons a:hover {

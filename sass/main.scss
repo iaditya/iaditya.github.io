@@ -1,15 +1,17 @@
 @import "config";
+@import "home";
 
 body {
   background-color: $primary-color;
   color: #fff;
   height: 100vh;
   line-height: 1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 h1,
 h2,
 h3 {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 a {
@@ -35,6 +37,7 @@ main {
 
     a {
       padding: 0.4rem;
+      @include transition-ease;
       &:hover {
         color: $secondary-color;
       }
