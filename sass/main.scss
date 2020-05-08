@@ -3,7 +3,7 @@
 
 body {
   background-color: $primary-color;
-  color: #fff;
+  color: set-text-color($primary-color);
   height: 100vh;
   line-height: 1;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -15,7 +15,7 @@ h3 {
 }
 
 a {
-  color: #fff;
+  color: set-text-color($primary-color);
   text-decoration: none;
 }
 
@@ -52,5 +52,5 @@ footer {
   right: 1rem;
   text-align: right;
   padding: 1rem;
-  color: #fff;
+  color: set-text-color($primary-color);
 }
