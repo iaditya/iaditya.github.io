@@ -1,6 +1,6 @@
 .home {
   height: 100%;
-  padding-top: 20vh;
+  padding-top: 30vh;
   overflow: hidden;
   align-items: center;
   text-align: center;
@@ -9,7 +9,7 @@
       rgba($primary-color, 0.9),
       rgba($primary-color, 0.3)
     ),
-    url('../img/EFFECTS.jpg') center;
+    url('../img/EFFECTS.jpg') center bottom;
   background-repeat: no-repeat;
   background-size: cover;
 

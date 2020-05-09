@@ -10,15 +10,35 @@ $secondary-color: #ff652f;
   margin: 0;
 }
 
+//FUNCTIONS
+@function set-text-color($color) {
+  @if (lightness($color) > 40%) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+//MIXINS
+
 @mixin transition-ease {
   transition: all 0.4s ease-in-out;
 }
 
-//FUNCTIONS
-@function set-text-color($color) {
-    @if (lightness($color) > 40%) {
-      @return #000;
-    } @else {
-      @return #fff;
-    }
+@mixin media-mid {
+  @media screen and (min-width: 768px) {
+    @content;
   }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}

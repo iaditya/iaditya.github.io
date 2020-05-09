@@ -9,14 +9,14 @@
 
 .home {
   height: 100%;
-  padding-top: 20vh;
+  padding-top: 30vh;
   overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/EFFECTS.jpg") center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/EFFECTS.jpg") center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/EFFECTS.jpg") center bottom;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/EFFECTS.jpg") center bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -261,6 +261,38 @@
 
 .jobs__job h6 {
   margin: 0.3rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    height: 100%;
+    background-color: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .nav .menu-nav__item.active > a {
+    color: #ff652f;
+  }
+  .nav .menu-nav__link {
+    display: inline-block;
+    font-size: 1rem;
+  }
 }
 
 body {
