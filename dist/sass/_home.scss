@@ -9,12 +9,19 @@
       rgba($primary-color, 0.9),
       rgba($primary-color, 0.3)
     ),
-    url('../img/EFFECTS.jpg') center bottom;
+    url("../img/EFFECTS.jpg") center bottom;
   background-repeat: no-repeat;
   background-size: cover;
 
+  h2:last-of-type {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    word-spacing: 1px;
+  }
+
   &__name {
-    font-size: 5rem;
+    font-size: 3rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     border-bottom: 1px solid set-text-color($primary-color);
